@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.5/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.1.5/dist/mindar-image-aframe.prod.js"></script>
   </head>
 
   <body>
@@ -9,14 +11,14 @@
       <div>Loading, please wait...</div>
     </div>
     <a-scene
-      mindar-image="imageTargetSrc:https://cdn.glitch.global/3fa4a16f-4f3b-4a0e-b959-ce65bca792dd/targets%20(1).mind?v=1677193285803"
+      mindar-image="imageTargetSrc:https://cdn.glitch.global/3fa4a16f-4f3b-4a0e-b959-ce65bca792dd/atari.mind?v=1677193285803"
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled:false"
     >
       <a-assets>
         <img
-          id="atari"
-          src="https://cdn.glitch.global/3fa4a16f-4f3b-4a0e-b959-ce65bca792dd/atari.mind?v=1677193285803"
+          id="atariescr"
+          src="https://cdn.glitch.global/3fa4a16f-4f3b-4a0e-b959-ce65bca792dd/atariescr.png?v=1677189672787"
         />
         <a-asset-item
           id="atarig"
@@ -27,7 +29,7 @@
 
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane
-          src="#atari"
+          src="#atariescr"
           position="0 0 0"
           height="0.552"
           width="1"
